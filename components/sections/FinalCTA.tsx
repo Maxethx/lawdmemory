@@ -30,7 +30,7 @@ export default function FinalCTA() {
             </span>
           </div>
 
-          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-[-0.035em] leading-[1] text-grad">
+          <h2 className="text-4xl sm:text-5xl lg:text-6xl font-black tracking-[-0.035em] leading-[1] text-white">
             Deploy in under a minute.
           </h2>
 

@@ -219,7 +219,7 @@ export default function Hero() {
           className="text-center text-5xl sm:text-6xl lg:text-7xl xl:text-[92px] font-black tracking-[-0.045em] leading-[0.94]"
         >
           <span className="block text-white">Give your AI team</span>
-          <span className="block text-grad mt-1">long-term memory.</span>
+          <span className="block text-white mt-1">long-term memory.</span>
         </motion.h1>
 
         {/* subhead */}
