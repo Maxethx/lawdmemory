@@ -17,9 +17,6 @@ function HeroAppPreview() {
       transition={{ delay: 0.55, duration: 0.9, ease: [0.2, 0.8, 0.2, 1] }}
       className="relative mx-auto max-w-6xl"
     >
-      <div className="absolute -inset-12 bg-white/[0.04] rounded-[2.5rem] blur-3xl" />
-      <div className="absolute inset-x-12 -top-8 h-32 bg-white/[0.06] blur-3xl rounded-full" />
-
       <a href="#demo" className="block group/preview">
         <div className="relative glass-strong rounded-2xl overflow-hidden shadow-[0_30px_120px_rgba(0,0,0,0.6)]
                         transition-all duration-500 group-hover/preview:scale-[1.005]">
@@ -182,7 +179,6 @@ function HeroAppPreview() {
         </div>
       </a>
 
-      <div className="absolute -bottom-20 left-1/2 -translate-x-1/2 w-3/4 h-32 bg-white/[0.025] blur-2xl rounded-full pointer-events-none" />
     </motion.div>
   );
 }
@@ -193,8 +189,7 @@ export default function Hero() {
     <section className="relative pt-28 pb-24 lg:pt-36 lg:pb-32 overflow-hidden">
       <div className="absolute inset-0 grid-bg mask-radial opacity-60 pointer-events-none" />
       <ParticleField density={32} opacity={0.5} />
-      <Spotlight size={1100} opacity={0.06} y="28%" />
-      <Spotlight size={700}  opacity={0.03} y="65%" x="20%" />
+      <Spotlight size={900} opacity={0.025} y="20%" />
       <div className="absolute bottom-0 inset-x-0 h-40 bg-gradient-to-b from-transparent to-black pointer-events-none" />
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
