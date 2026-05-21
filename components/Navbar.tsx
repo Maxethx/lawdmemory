@@ -5,7 +5,6 @@ import { Menu, X, GitFork, ArrowRight } from "lucide-react";
 import { cn } from "@/lib/utils";
 import Logo from "./Logo";
 import { openSignup } from "./ui/SignupDialog";
-import { toast } from "./ui/Toast";
 
 const links = [
   { label: "Product",      href: "/#features" },
@@ -62,13 +61,15 @@ export default function Navbar() {
 
             {/* Actions */}
             <div className="hidden md:flex items-center gap-3">
-              <button
-                onClick={() => toast("⭐ Star us on GitHub — link coming soon.", "info")}
+              <a
+                href="https://github.com/lawdmemory-lab/lawdmemory"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-white/40 hover:text-white transition-colors"
-                title="GitHub"
+                title="View on GitHub"
               >
                 <GitFork className="w-4 h-4" />
-              </button>
+              </a>
               <button onClick={openSignup} className="btn-primary group !text-sm !px-3.5 !py-1.5 !rounded-lg">
                 Start Building
                 <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />

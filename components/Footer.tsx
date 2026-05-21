@@ -18,7 +18,7 @@ const linkGroups: Record<string, Link[]> = {
     { label: "Documentation", href: "/docs" },
     { label: "SDK Reference", href: "/docs#sdks" },
     { label: "MCP Tools",     href: "/docs#mcp-server" },
-    { label: "GitHub",        action: () => toast("⭐ GitHub repo opens after public release.", "info") },
+    { label: "GitHub",        href: "https://github.com/lawdmemory-lab/lawdmemory" },
     { label: "Changelog",     action: () => toast("v1.0.0 — initial release.", "info") },
   ],
   Company: [
@@ -49,13 +49,15 @@ export default function Footer() {
               Open source. MIT license.
             </p>
             <div className="flex gap-3">
-              <button
-                onClick={() => toast("⭐ GitHub repo opens after public release.", "info")}
+              <a
+                href="https://github.com/lawdmemory-lab/lawdmemory"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-white/30 hover:text-white transition-colors"
-                title="GitHub"
+                title="View on GitHub"
               >
                 <ExternalLink className="w-4 h-4" />
-              </button>
+              </a>
               <button
                 onClick={() => toast("Follow @lawdmemory once we launch.", "info")}
                 className="text-white/30 hover:text-white transition-colors"

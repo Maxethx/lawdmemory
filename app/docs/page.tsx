@@ -141,13 +141,15 @@ export default function DocsPage() {
 
           {/* actions */}
           <div className="hidden sm:flex items-center gap-2 shrink-0">
-            <button
-              onClick={() => toast("⭐ GitHub repo opens after public release.", "info")}
+            <a
+              href="https://github.com/lawdmemory-lab/lawdmemory"
+              target="_blank"
+              rel="noopener noreferrer"
               className="text-white/40 hover:text-white transition-colors p-1.5"
-              title="GitHub"
+              title="View on GitHub"
             >
               <GitFork className="w-4 h-4" />
-            </button>
+            </a>
             <button
               onClick={openSignup}
               className="btn-primary group !text-xs !px-3 !py-1.5 !rounded-lg"
