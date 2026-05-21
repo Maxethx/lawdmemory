@@ -6,7 +6,6 @@ import { ArrowRight, Loader2, GitFork } from "lucide-react";
 import Link from "next/link";
 import Logo from "@/components/Logo";
 import { createClient } from "@/lib/supabase/client";
-import { Spotlight, ParticleField } from "@/components/ui/Background";
 import { toast } from "@/components/ui/Toast";
 
 export function LoginForm() {
@@ -32,9 +31,6 @@ export function LoginForm() {
 
   return (
     <main className="relative min-h-screen flex items-center justify-center overflow-hidden bg-black">
-      <ParticleField density={24} opacity={0.35} />
-      <Spotlight size={900} opacity={0.05} y="50%" />
-      <div className="absolute inset-0 grid-bg-fine mask-radial opacity-50 pointer-events-none" />
 
       <motion.div
         initial={{ opacity: 0, y: 20, scale: 0.97 }}

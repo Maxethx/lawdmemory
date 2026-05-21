@@ -2,7 +2,6 @@
 import { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { ArrowRight, BookOpen, Sparkles } from "lucide-react";
-import { Spotlight } from "@/components/ui/Background";
 import { CopyCommand } from "@/components/ui/CopyCommand";
 import { openSignup } from "@/components/ui/SignupDialog";
 
@@ -11,10 +10,7 @@ export default function FinalCTA() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section id="cta" ref={ref} className="relative py-28 lg:py-36 overflow-hidden">
-      <Spotlight size={900} opacity={0.04} y="50%" />
-      <div className="absolute inset-0 grid-bg-fine mask-radial opacity-30 pointer-events-none" />
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black pointer-events-none" />
+    <section id="cta" ref={ref} className="relative py-28 lg:py-36 overflow-hidden bg-black">
 
       <div className="relative z-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.div

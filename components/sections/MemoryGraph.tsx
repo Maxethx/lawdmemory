@@ -15,7 +15,6 @@ import {
 } from "@xyflow/react";
 import "@xyflow/react/dist/style.css";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { Spotlight } from "@/components/ui/Background";
 
 /* ── monochrome node styles ──────────────────────────────── */
 const nodeStyles: Record<string, { ring: string; intensity: number }> = {
@@ -104,8 +103,7 @@ export default function MemoryGraph() {
   const [edges, , onEdgesChange] = useEdgesState(initEdges);
 
   return (
-    <section id="graph" ref={ref} className="relative py-32 lg:py-40 overflow-hidden">
-      <Spotlight size={900} opacity={0.025} y="40%" x="70%" />
+    <section id="graph" ref={ref} className="relative py-32 lg:py-40 overflow-hidden bg-black">
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader

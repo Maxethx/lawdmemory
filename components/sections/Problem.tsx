@@ -3,7 +3,6 @@ import { motion, useInView } from "framer-motion";
 import { useRef } from "react";
 import { BrainCog, Layers, Shuffle, EyeOff } from "lucide-react";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { Spotlight } from "@/components/ui/Background";
 
 const problems = [
   {
@@ -33,8 +32,7 @@ export default function Problem() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section id="problem" ref={ref} className="relative py-32 lg:py-40 overflow-hidden">
-      <Spotlight size={900} opacity={0.02} y="50%" />
+    <section id="problem" ref={ref} className="relative py-32 lg:py-40 overflow-hidden bg-black">
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader

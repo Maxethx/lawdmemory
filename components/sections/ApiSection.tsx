@@ -3,7 +3,6 @@ import { motion, useInView } from "framer-motion";
 import { useRef, useState } from "react";
 import { Webhook, Network, Database, Code2, GitMerge, Layers, Copy, Check } from "lucide-react";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { Spotlight } from "@/components/ui/Background";
 import { toast } from "@/components/ui/Toast";
 
 const apis = [
@@ -105,9 +104,7 @@ export default function ApiSection() {
   const [active, setActive] = useState("MCP Integration");
 
   return (
-    <section id="api" ref={ref} className="relative py-32 lg:py-40 overflow-hidden">
-      <div className="absolute inset-0 grid-bg-fine mask-radial opacity-50 pointer-events-none" />
-      <Spotlight size={900} opacity={0.02} y="50%" x="30%" />
+    <section id="api" ref={ref} className="relative py-32 lg:py-40 overflow-hidden bg-black">
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader

@@ -3,7 +3,6 @@ import { useState, useEffect, useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import { ChevronRight, Clock, Cpu } from "lucide-react";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { Spotlight } from "@/components/ui/Background";
 
 type Line = { text: string; delay: number; intensity?: "dim" | "mid" | "bright" };
 
@@ -122,8 +121,7 @@ export default function QueryDemo() {
   const q = queries[selected];
 
   return (
-    <section id="demo" ref={ref} className="relative py-32 lg:py-40 overflow-hidden">
-      <Spotlight size={900} opacity={0.022} y="60%" x="25%" />
+    <section id="demo" ref={ref} className="relative py-32 lg:py-40 overflow-hidden bg-black">
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader

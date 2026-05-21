@@ -6,7 +6,6 @@ import {
   Database, Network, Clock, Lightbulb,
 } from "lucide-react";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { Spotlight } from "@/components/ui/Background";
 
 const steps = [
   {
@@ -77,9 +76,7 @@ export default function HowItWorks() {
   const inView = useInView(ref, { once: true, margin: "-60px" });
 
   return (
-    <section id="how-it-works" ref={ref} className="relative py-32 lg:py-40 overflow-hidden">
-      <div className="absolute inset-0 grid-bg-fine mask-radial opacity-50 pointer-events-none" />
-      <Spotlight size={1000} opacity={0.025} y="50%" />
+    <section id="how-it-works" ref={ref} className="relative py-32 lg:py-40 overflow-hidden bg-black">
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader

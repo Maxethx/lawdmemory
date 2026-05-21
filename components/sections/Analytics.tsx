@@ -6,7 +6,6 @@ import {
   XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer,
 } from "recharts";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { Spotlight } from "@/components/ui/Background";
 
 const knowledgeData = [
   { month: "Jul", memories: 1200 },
@@ -103,8 +102,7 @@ export default function Analytics() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section id="analytics" ref={ref} className="relative py-32 lg:py-40 overflow-hidden">
-      <Spotlight size={900} opacity={0.022} y="50%" x="75%" />
+    <section id="analytics" ref={ref} className="relative py-32 lg:py-40 overflow-hidden bg-black">
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader

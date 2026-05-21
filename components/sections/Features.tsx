@@ -5,7 +5,6 @@ import {
   Clock, Code2, GitBranch, AlertTriangle, Bot, Network, Brain, FileSearch,
 } from "lucide-react";
 import { SectionHeader } from "@/components/ui/SectionHeader";
-import { Spotlight } from "@/components/ui/Background";
 
 const features = [
   { icon: Clock,          title: "Temporal Memory Engine",        desc: "Track how architectural decisions, code patterns, and team knowledge evolve over time with millisecond precision.", tag: "v1.0" },
@@ -23,9 +22,7 @@ export default function Features() {
   const inView = useInView(ref, { once: true, margin: "-80px" });
 
   return (
-    <section id="features" ref={ref} className="relative py-32 lg:py-40 overflow-hidden">
-      <div className="absolute inset-0 grid-bg-fine mask-radial opacity-50 pointer-events-none" />
-      <Spotlight size={900} opacity={0.025} y="40%" x="65%" />
+    <section id="features" ref={ref} className="relative py-32 lg:py-40 overflow-hidden bg-black">
 
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <SectionHeader

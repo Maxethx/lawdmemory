@@ -1,7 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import { ArrowRight, BookOpen, Sparkles, Terminal, Clock, AlertCircle, GitCommit } from "lucide-react";
-import { ParticleField, Spotlight } from "@/components/ui/Background";
+import { ParticleField } from "@/components/ui/Background";
 import { CopyCommand } from "@/components/ui/CopyCommand";
 import { openSignup } from "@/components/ui/SignupDialog";
 
@@ -186,11 +186,8 @@ function HeroAppPreview() {
 /* ─────────────────────────────────────────────────────────── */
 export default function Hero() {
   return (
-    <section className="relative pt-28 pb-24 lg:pt-36 lg:pb-32 overflow-hidden">
-      <div className="absolute inset-0 grid-bg mask-radial opacity-60 pointer-events-none" />
-      <ParticleField density={32} opacity={0.5} />
-      <Spotlight size={900} opacity={0.025} y="20%" />
-      <div className="absolute bottom-0 inset-x-0 h-40 bg-gradient-to-b from-transparent to-black pointer-events-none" />
+    <section className="relative pt-28 pb-24 lg:pt-36 lg:pb-32 overflow-hidden bg-black">
+      <ParticleField density={18} opacity={0.25} />
 
       <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* eyebrow */}
