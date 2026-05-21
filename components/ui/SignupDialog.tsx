@@ -58,7 +58,7 @@ export function SignupDialog() {
             exit={{ opacity: 0 }}
             transition={{ duration: 0.2 }}
             onClick={() => setOpen(false)}
-            className="fixed inset-0 z-[90] bg-black/80 backdrop-blur-md"
+            className="fixed inset-0 z-[90] bg-black/95"
           />
 
           {/* dialog */}
